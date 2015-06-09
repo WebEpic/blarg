@@ -1,0 +1,34 @@
+<h2>New Post</h2>
+
+<!--Title, Tags, Text-->
+
+<%= form_tag('/posts', class: 'post-form') do %>
+  <div>
+    <%= label_tag(:title, "Title: ") %>
+    <%= text_field_tag(:title, nil, size: 40) %>
+  </div>
+
+  <br/>
+
+  <div>
+    <%= label_tag(:title, "Tags: ") %>
+    <%= text_field_tag(:title, nil, size: 40) %>
+  </div>
+
+  <br/>
+
+  <div>
+    <%= label_tag(:title, "Content: ") %>
+  <br/>
+    <%= text_area_tag(:content, nil, rows: 40, cols: 80) %>
+  </div>
+  
+  <br/>
+  <div><%= submit_tag 'Save' %></div>
+  
+  <br/>
+  <div>
+  <%= link_to "Back", :back %>
+  </div>
+<% end %>
+  
