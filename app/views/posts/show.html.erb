@@ -1,4 +1,3 @@
-<h2><%= post.title %></h2>
-<h3>Written on: <%= @post.written_at %></h3>
+<%= render partial: "posts", locals: { post: @post } %>
 
-<% = simple_format(@post.content) %>
+<%= render partial: "post", object: @post %>
